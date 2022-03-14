@@ -1,0 +1,190 @@
+#! ---------------------------------------------------------------
+#! Aurora Theme for Hexo
+#! ---------------------------------------------------------------
+#! Designed & Coded By TriDiamond
+#! ---------------------------------------------------------------
+
+#! ---------------------------------------------------------------
+#! Site Configs
+#！ @docs https://aurora.tridiamond.tech/guide/configuration.html
+#! ---------------------------------------------------------------
+site:
+  subtitle: wjl110's Blog
+  author: wjl110
+  nick: 学习与总结
+  description: 学而不思则罔,思而不学则怠<br /> @ <b>公众号：爱日推</b>
+  link: '/'
+  language: cn
+  multi_language: true
+  logo: https://avatars.githubusercontent.com/u/53851034?s=400&u=d3e4276dbc73f46c11ffa447d9d9d0803c5274ea&v=4
+  avatar: https://avatars.githubusercontent.com/u/53851034?s=400&u=d3e4276dbc73f46c11ffa447d9d9d0803c5274ea&v=4
+  beian:
+    number: '蜀ICP备2022004784号-1'
+    link: 'https://beian.miit.gov.cn/'
+  police_beian:
+    number: ''
+    link: ''
+
+#! ---------------------------------------------------------------
+#! Authors Configs
+#！ @docs https://aurora.tridiamond.tech/guide/authors.html
+#! ---------------------------------------------------------------
+authors:
+  ##! example
+   wjl110:
+     name: wjl110
+     avatar: https://up.enterdesk.com/edpic_source/44/ff/3d/44ff3d6bd2819d524facfcc33205d4cd.jpg
+     link: https://github.com/wjl110
+     description: 'Think like an artist, code like an artisan.'
+     socials:
+       github: https://github.com/wjl110
+
+#! ---------------------------------------------------------------
+#! Menu Configs
+#！ @docs https://aurora.tridiamond.tech/guide/menu.html
+#! ---------------------------------------------------------------
+menu:
+  About: true
+  Tags: true
+  Archives: true
+    # 一个 xx 项目的外部链接
+  message-board: 
+    name: 'MessageBoard'
+    i18n:
+      cn: '留言板'
+      en: 'Message Board'
+    path: '/page/message-board'
+  pages-menu:
+      name: 'more'
+      children:
+        friendchain:
+          name: '友链'
+          path: '/page/friend-chain'
+        donation:
+          name: '捐赠'
+          path: '/page/donation'
+        Official-website:
+          name: 'Official'  
+          path: 'https://wjl110.cn'
+
+
+#! ---------------------------------------------------------------
+#! Theme Config
+#! @docs https://aurora.tridiamond.tech/guide/theme.html
+#! ---------------------------------------------------------------
+theme:
+  dark_mode: 'auto'
+  profile_shape: diamond # support `circle`, `diamond`, `rounded`
+  #文章带feature自动推荐首页三篇
+  feature: true
+  #渐变色调整
+  gradient:
+    color_1: '#24c6dc'
+    color_2: '#5433ff'
+    color_3: '#ff0099'
+
+#! ---------------------------------------------------------------
+#! Social Configs
+#! @docs https://aurora.tridiamond.tech/guide/social.html
+#! ---------------------------------------------------------------
+socials:
+  customs:
+  ##! Example:
+  ##! --- Using SVG
+  # bilibili:
+  #   icon: http://localhost:4000/svg/bilibili.svg
+  #   link: https://live.bilibili.com/22619211
+
+  ##! --- Using IconFont
+  # baidu:
+  #   icon: iconfont icon-baidu
+  #   link: https://live.bilibili.com/22619211
+
+  ##! --- Using FontAwesome
+  # book:
+  #   icon: far fa-address-book
+  #   link: https://live.bilibili.com/22619211
+
+#! ---------------------------------------------------------------
+#! Site Meta Configs
+#! @docs https://aurora.tridiamond.tech/guide/theme.html
+#! ---------------------------------------------------------------
+site_meta:
+  cdn: cn
+  favicon:
+  description: '自强不息,厚德载物'
+  keywords: ''
+  author: '健霖'
+
+#! ---------------------------------------------------------------
+#! Plugins
+#! @docs https://aurora.tridiamond.tech/guide/plugins.html
+#! ---------------------------------------------------------------
+
+# For local development only!
+gitalk:
+  enable: false
+  autoExpand: true
+  clientID: ''
+  clientSecret: ''
+  repo: 'dev-blog-comments'
+  owner: 'TriDiamond'
+  admin: ['TriDiamond']
+  id: uid
+  language: cn
+  distractionFreeMode: true
+  recentComment: true
+  proxy: ''
+
+# Valine comment plugin (recommended!)
+# see https://valine.js.org/quickstart.html
+valine:
+  enable: true
+  app_id: hFI6Be3866zXgE8lVIN4fsVE-gzGzoHsz
+  app_key: tBOqRiGWwAUvE6Jnl3RX1EFs
+  avatar: 'https://avatars.githubusercontent.com/u/53851034?s=400&u=d3e4276dbc73f46c11ffa447d9d9d0803c5274ea&v=4'
+  placeholder: Leave your thoughts behind~
+  visitor: true
+  lang: cn
+  avatarForce: true
+  meta: ['wjl110', '184313947@qq.com']
+  requiredFields: [hello]
+  admin: wjl110'
+  recentComment: true
+
+# Enable Busuanzi statistic plugin
+# see http://ibruce.info/2015/04/04/busuanzi/
+busuanzi:
+  enable: true
+
+copy_protection:
+  enable: true
+  author:
+    cn: 作者
+    en: Author
+  link:
+    cn: 本文来自于
+    en: Article is from
+  license:
+    cn: 博客内容遵循 署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议
+    en: This content is shared under the CC BY-NC-SA 4.0 protocol (Non-Commercial)
+
+#! ---------------------------------------------------------------
+#! Enable Aurora Bot Dia
+#! @docs https://aurora.tridiamond.tech/guide/site-meta.html#custom-meta
+#! ---------------------------------------------------------------
+aurora_bot:
+  enable: true
+  locale: cn
+  bot_type: Dia
+  tips: 
+
+#! ---------------------------------------------------------------
+#! Injections添加2D看板娘小部件
+#! @docs https://aurora.tridiamond.tech/guide/site-meta.html#custom-meta
+#! ---------------------------------------------------------------
+injects:
+  scripts:
+  - <script src= "https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js"></script>
+  css: 
+  - <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css">
